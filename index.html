@@ -1,6 +1,8 @@
-<html>
+<html lang="zh">
 <head>
 <meta charset="utf-8">
+<meta name="author" content="TaicEart">
+<meta name="generator" content="TextEdit 1.11">
 <title>TiUi demo</title>
 <link rel="shortcut icon" href="favicon.png" type="image/png"/>
 
@@ -9,21 +11,37 @@
 src: url('TiUi-demo.woff')
 }
 
-div,input {
+details, header, input {
 color: #7B8DA7;
-font: normal 200 72px 'TiUi', sans-serif;
+font: normal 300 72px 'TiUi', sans-serif;
 }
 
+details {
+font-size: 18px;
+text-align: left;
+line-height: 1.6;
+max-width: 46%;
+color: #FFF;
+background-color: #D6BD96;
+float: left;
+padding: 6px 18px;
+border-radius: 3px;
+}
+summary {
+list-style-type: none;
+font-size: 36px;
+}
+li {list-style-type: none;}
+li:before {content: "⁃ ";}
+
 input {
-border-style:none;
-text-align:center;
+border-style: none;
+text-align: center;
 display: block;
 width: 100%;
-height: auto;
+line-height: 2;
 padding: 6px 12px;
-line-height: 1.428571429;
-vertical-align: middle;
-border-radius: 2px;
+border-radius: 3px;
 -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
@@ -35,20 +53,27 @@ box-shadow: 0 1px 8px #D6BD96;
 </style>
 </head>
 
-<body style="background-color:#FFF; text-align:center; margin:15%;">
-<div id="op">
-TiUi, 2017‒1‒7, turnApower
-</div>
+<body style="background-color:#FFF; text-align:center; margin:16%;">
+
+<details>
+<summary>⁂</summary>
+<li>2017‒1‒7公开。</li>
+<li>如果你在右边看不到 ∀ 和 <abbr title="U+23FB Power Symbol, Unicode 9.0">⏻</abbr> 两个符号，表明你的浏览器不支持字体连字特性。</li>
+<li>仅作预览。两个字母没画好没有放出。</li>
+<br>
+</details>
+
+<header>TiUi-demo, turnApower</header>
 
 <br>
 
-<input type="text" value="点此输入文字测试字体。"
+<input type="text" value="点此输入文字测试字体"
  onmouseover="this.style.backgroundColor='D6BD96'; this.style.color='#FFF'"
  onmouseout="this.style.backgroundColor='#FFF'; this.style.color='#7B8DA7'"/>
 
 <br>
 
-<input type="text" value="同上，测试 36px 字号。" style="font-size: 36px;"
+<input type="text" value="同上，测试 36px 字号" style="font-size: 36px;"
  onmouseover="this.style.backgroundColor='D6BD96'; this.style.color='#FFF'"
  onmouseout="this.style.backgroundColor='#FFF'; this.style.color='#7B8DA7'"/>
 
