@@ -1,22 +1,56 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>TiYi demo</title>
+<title>TiUi demo</title>
 <link rel="shortcut icon" href="favicon.png" type="image/png"/>
+
 <style type="text/css">
-@font-face{
-font-family:TiYi-demo;
-src: url('TiYi-demo.woff')
+@font-face{font-family:TiUi;
+src: url('TiUi-demo.woff2')
 }
-div{
-font: normal 200 64px 'TiYi-demo','Avenir'
+
+div,input {
+color: #7B8DA7;
+font: normal 200 72px 'TiUi', sans-serif;
 }
+
+input {
+border-style:none;
+text-align:center;
+display: block;
+width: 100%;
+height: auto;
+padding: 6px 12px;
+line-height: 1.428571429;
+vertical-align: middle;
+border-radius: 2px;
+-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+input:focus {
+-webkit-box-shadow: 0 1px 8px #D6BD96;
+box-shadow: 0 1px 8px #D6BD96;
+} 
+
 </style>
 </head>
-<body style="color:#FFF; background-color:#000; text-align:center; margin:15%;">
-<div>
-T♁rra<br>
-L☽na
+
+<body style="background-color:#FFF; text-align:center; margin:15%;">
+<div id="op">
+TiUi, 2017‒1‒7, turnApower
 </div>
+
+<br>
+
+<input type="text" value="点此输入文字测试字体。"
+ onmouseover="this.style.backgroundColor='D6BD96'; this.style.color='#FFF'"
+ onmouseout="this.style.backgroundColor='#FFF'; this.style.color='#7B8DA7'"/>
+
+<br>
+
+<input type="text" value="同上，测试 36px 字号。" style="font-size: 36px;"
+ onmouseover="this.style.backgroundColor='D6BD96'; this.style.color='#FFF'"
+ onmouseout="this.style.backgroundColor='#FFF'; this.style.color='#7B8DA7'"/>
+
 </body>
 </html>
