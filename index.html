@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="zh">
 <head>
 <meta charset="utf-8">
@@ -25,29 +26,33 @@ color: #FFF;
 background-color: #D6BD96;
 float: left;
 padding: 6px 18px;
+border-radius: 2em;
+transition: border-radius ease .1s;
+}
+details[open] {
 border-radius: 3px;
 }
 summary {
 list-style-type: none;
+outline-style: none;
 font-size: 36px;
 }
 li {list-style-type: none;}
 li:before {content: "⁃ ";}
 
 input {
-border-style: none;
+border:2px solid #FFF;
 text-align: center;
 display: block;
 width: 100%;
 line-height: 2;
 padding: 6px 12px;
 border-radius: 3px;
--webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+transition: border-color ease .6s;
+outline-style: none;
 }
 input:focus {
--webkit-box-shadow: 0 1px 8px #D6BD96;
-box-shadow: 0 1px 8px #D6BD96;
+border-color: #D6BD96;
 } 
 
 </style>
@@ -61,7 +66,7 @@ box-shadow: 0 1px 8px #D6BD96;
 <li><time datetime="2017-01-07" pubdate="pubdate">2017‒1‒7公开</time>。</li>
 <li>如果你在右边看不到 ∀ 和 <abbr title="U+23FB Power Symbol, Unicode 9.0">⏻</abbr> 两个符号，表明你的浏览器不支持字体连字特性。</li>
 <li>仅作预览。比如有两个字母没画好没有放出，缺少符号，全部视错觉没有调整，等等。</li>
-<li>点 ⁂ 折叠 ⁃</li>
+<li>对了，点 ⁂ 可以把这块折叠回去 ⁃</li>
 <br>
 </details>
 
@@ -70,13 +75,13 @@ box-shadow: 0 1px 8px #D6BD96;
 <br>
 
 <input type="text" value="点此输入文字测试字体"
- onmouseover="this.style.backgroundColor='D6BD96'; this.style.color='#FFF'"
+ onmouseover="this.style.backgroundColor='#D6BD96'; this.style.color='#FFF'"
  onmouseout="this.style.backgroundColor='#FFF'; this.style.color='#7B8DA7'"/>
 
 <br>
 
 <input type="text" value="同上，测试 36px 字号" style="font-size: 36px;"
- onmouseover="this.style.backgroundColor='D6BD96'; this.style.color='#FFF'"
+ onmouseover="this.style.backgroundColor='#D6BD96'; this.style.color='#FFF'"
  onmouseout="this.style.backgroundColor='#FFF'; this.style.color='#7B8DA7'"/>
 
 </body>
